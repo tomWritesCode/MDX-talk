@@ -1,0 +1,22 @@
+{
+  "name": "mdx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "code-surfer": "2.0.0-alpha.6",
+    "mdx-deck": "^2.4.0",
+    "mdx-deck-live-code": "^1.0.1",
+    "raw-loader": "^3.0.0"
+  },
+  "dependencies": {
+    "@blocks/kit": "0.0.20",
+    "@emotion/core": "^10.0.10"
+  }
+}

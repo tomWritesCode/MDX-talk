@@ -1,0 +1,42 @@
+import { Head, Appear, Notes, Image } from 'mdx-deck';
+import { Invert, Split, SplitRight, Horizontal, FullScreenCode, Embed } from 'mdx-deck/layouts';
+// import { CodeSurferLayout } from 'code-surfer';
+import { TextGradient, BackgroundGradient } from '@blocks/kit';
+import { css, jsx } from '@emotion/core';
+
+export { future as theme } from 'mdx-deck/themes'
+
+<Head>
+  <title>MDX || MarkDAMN</title>
+</Head>
+
+<!-- Begin Slide 1 -->
+<TextGradient
+  start="#00feff"
+  end="#dcbaf9"
+  stop="70%"
+  angle="110"
+>
+
+  # MDX
+  ### Markdown, more like
+  ## MARKDAMN!
+
+</TextGradient>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: '500px',
+    margin: '0 auto',
+    borderRadius: '15px'
+  }}
+  random={true}
+>
+  What is MDX?
+</BackgroundGradient>
+
+MDX is a format that lets you seamlessly write JSX into Markdown documents. You can import components and embed them within the content.
+
+---
