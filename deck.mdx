@@ -19,8 +19,9 @@ export { future as theme } from 'mdx-deck/themes'
 >
 
   # MDX
-  ### Markdown, more like
-  ## MARKDAMN!
+  ## Markdown to MarkDamn
+
+  ### @tomwritescode
 
 </TextGradient>
 
@@ -30,13 +31,143 @@ export { future as theme } from 'mdx-deck/themes'
   style={{
     width: '500px',
     margin: '0 auto',
-    borderRadius: '15px'
+    borderRadius: '15px',
+    fontWeight: 'bold'
   }}
   random={true}
 >
   What is MDX?
 </BackgroundGradient>
 
-MDX is a format that lets you seamlessly write JSX into Markdown documents. You can import components and embed them within the content.
+
+MDX brings the world of components to the convenience of Markdown.
+
+The ability to blend JSX with Markdown you have the ability to pull components straight into your markdown file.
+
+Turning a Markdown file into an interactive project opens up a world of possibilities.
 
 ---
+
+<Image   
+  src="./assets/whatCanWeDo.png" 
+    style={{
+      backgroundPosition: 'center',
+      backgroundSize: '75%',
+      height: '90vh'
+    }}
+/>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: '500px',
+    margin: '0 auto',
+    borderRadius: '15px',
+    fontWeight: 'bold'
+  }}
+  random={true}
+>
+  MDX on the web?
+</BackgroundGradient>
+
+<ul>
+  <TextGradient
+    start="#00feff"
+    end="#dcbaf9"
+    stop="70%"
+    angle="110"
+  >
+    Putting Gatsby on the web?
+  </TextGradient>
+  <Appear>
+    <li>GatsbyJS (gatsby-mdx package)</li>
+    <li>NextJS (Offical Plugin)</li>
+    <li>Create React App (mdx.macro)</li>
+    <li>React Static (Webpack Config Needed)</li>
+    <li>Parcel (@mdx-js/parcel-plugin-mdx plugin)</li>
+    <li>Zero</li>
+  </Appear>
+</ul>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: '500px',
+    margin: '0 auto',
+    borderRadius: '15px',
+    fontWeight: 'bold'
+  }}
+  random={true}
+>
+  MDX with GatsbyJS
+</BackgroundGradient>
+
+// Using MDX / MDX-Blocks to make the presenstaion page.
+
+---
+
+<BackgroundGradient
+  style={{
+    margin: '0 auto 40px',
+    borderRadius: '15px',
+    fontWeight: 'bold'
+  }}
+  random={true}
+>
+  Demo's without MDX || Gif Central
+</BackgroundGradient>
+
+<div>
+  <img src="./assets/gif_Component_Example.gif"
+    style={{
+      height: '70vh',
+      borderRadius: '14px'
+    }}
+  /> 
+</div>
+
+<Notes>
+  Putting a demo of interactivity onto a page would most likely have to be done with GIFs.
+</Notes>
+
+---
+import Scoreboard from './Components/Scoreboard.js';
+
+<BackgroundGradient
+  style={{
+    margin: '0 auto 40px',
+    borderRadius: '15px',
+    fontWeight: 'bold'
+  }}
+  random={true}
+>
+  MDX || Interactivity at its best
+</BackgroundGradient>
+
+<Scoreboard />
+
+<Notes>
+  This is a component from a basketball scoreboard I made. All it does is add points to a total, nothing overly flash or complex.
+</Notes>
+
+---
+
+<BackgroundGradient
+  style={{
+    margin: '0 auto 40px',
+    borderRadius: '15px',
+    fontWeight: 'bold',
+    width: '500px'
+  }}
+  random={true}
+>
+  MDX-Deck
+</BackgroundGradient>
+
+MDX-Deck is a tool built by Brent Jackson (@jxnblk), It turns MDX into an incredibly powerful tool for making presentations. This presentation is build with MDX-Deck, it is also hosted on Netlify. 
+
+---
+
+
