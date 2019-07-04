@@ -2,9 +2,8 @@ import { Head, Appear, Notes, Image } from 'mdx-deck';
 import { Invert, Split, SplitRight, Horizontal, FullScreenCode, Embed } from 'mdx-deck/layouts';
 // import { CodeSurferLayout } from 'code-surfer';
 import { TextGradient, BackgroundGradient } from '@blocks/kit';
-import { css, jsx } from '@emotion/core';
-
-export { future as theme } from 'mdx-deck/themes'
+import { css, jsx } from '@emotion/core'
+export { default as theme } from './Components/theme.js';
 
 <Head>
   <title>MDX || MarkDAMN</title>
@@ -29,7 +28,8 @@ export { future as theme } from 'mdx-deck/themes'
 
 <BackgroundGradient
   style={{
-    width: '500px',
+    width: 'auto',
+    maxWidth: '500px',
     margin: '0 auto',
     borderRadius: '15px',
     fontWeight: 'bold'
@@ -52,7 +52,7 @@ Turning a Markdown file into an interactive project opens up a world of possibil
   src="./assets/whatCanWeDo.png" 
     style={{
       backgroundPosition: 'center',
-      backgroundSize: '75%',
+      backgroundSize: '80%',
       height: '90vh'
     }}
 />
@@ -61,7 +61,8 @@ Turning a Markdown file into an interactive project opens up a world of possibil
 
 <BackgroundGradient
   style={{
-    width: '500px',
+    width: 'auto',
+    maxWidth: '500px',
     margin: '0 auto',
     borderRadius: '15px',
     fontWeight: 'bold'
@@ -94,7 +95,8 @@ Turning a Markdown file into an interactive project opens up a world of possibil
 
 <BackgroundGradient
   style={{
-    width: '500px',
+    width: 'auto',
+    maxWidth: '500px',
     margin: '0 auto',
     borderRadius: '15px',
     fontWeight: 'bold'
@@ -110,6 +112,8 @@ Turning a Markdown file into an interactive project opens up a world of possibil
 
 <BackgroundGradient
   style={{
+    width: 'auto',
+    maxWidth: '500px',
     margin: '0 auto 40px',
     borderRadius: '15px',
     fontWeight: 'bold'
@@ -137,6 +141,8 @@ import Scoreboard from './Components/Scoreboard.js';
 
 <BackgroundGradient
   style={{
+    width: 'auto',
+    maxWidth: '500px',
     margin: '0 auto 40px',
     borderRadius: '15px',
     fontWeight: 'bold'
@@ -156,18 +162,33 @@ import Scoreboard from './Components/Scoreboard.js';
 
 <BackgroundGradient
   style={{
+    width: 'auto',
+    maxWidth: '500px',
     margin: '0 auto 40px',
     borderRadius: '15px',
     fontWeight: 'bold',
-    width: '500px'
   }}
   random={true}
 >
   MDX-Deck
 </BackgroundGradient>
 
-MDX-Deck is a tool built by Brent Jackson (@jxnblk), It turns MDX into an incredibly powerful tool for making presentations. This presentation is build with MDX-Deck, it is also hosted on Netlify. 
+<div
+  style={{
+    padding: '0 40px'
+  }}
+>
+  MDX-Deck is a tool built by Brent Jackson (@jxnblk), It turns MDX into an incredibly powerful tool for making presentations. 
+  
+  This presentation is build with MDX-Deck, it is also hosted on Netlify. 
+</div>
 
 ---
 
-
+<div
+  style={{
+    padding: '0 40px'
+  }}
+>
+  The slides for this demo are available at <em><strong>icantbelieveitsnotmarkdown.netlify.com</strong></em>
+</div>
