@@ -2,7 +2,6 @@ import { Head, Appear, Notes, Image } from 'mdx-deck';
 import { Invert, Split, SplitRight, Horizontal, FullScreenCode, Embed } from 'mdx-deck/layouts';
 // import { CodeSurferLayout } from 'code-surfer';
 import { TextGradient, BackgroundGradient } from '@blocks/kit';
-import { css, jsx } from '@emotion/core'
 export { default as theme } from './Components/theme.js';
 
 <Head>
@@ -113,7 +112,7 @@ Turning a Markdown file into an interactive project opens up a world of possibil
 <BackgroundGradient
   style={{
     width: 'auto',
-    maxWidth: '500px',
+    maxWidth: '100%',
     margin: '0 auto 40px',
     borderRadius: '15px',
     fontWeight: 'bold'
@@ -142,7 +141,7 @@ import Scoreboard from './Components/Scoreboard.js';
 <BackgroundGradient
   style={{
     width: 'auto',
-    maxWidth: '500px',
+    maxWidth: '100%',
     margin: '0 auto 40px',
     borderRadius: '15px',
     fontWeight: 'bold'
@@ -185,10 +184,75 @@ import Scoreboard from './Components/Scoreboard.js';
 
 ---
 
+<BackgroundGradient
+  style={{
+    width: 'auto',
+    maxWidth: '500px',
+    margin: '0 auto 40px',
+    borderRadius: '15px',
+    fontWeight: 'bold',
+  }}
+  random={true}
+>
+  MDX-Deck || Getting Started
+</BackgroundGradient>
+
+<div>
+  <img 
+    src="./assets/deck-install.png" 
+    style={{
+      borderRadius: '24px'
+    }}
+  />
+</div>
+
+---
+
+<TextGradient
+  start="#00feff"
+  end="#dcbaf9"
+  stop="70%"
+  angle="110"
+>
+  Lets get it going.
+</TextGradient>
+<ul>
+  <li>Make a <strong style={{color: '#00feff'}}><em>deck.mdx</em></strong> file at the root of the directory.</li>
+  <li>Seperate each slide with <strong style={{color: '#00feff'}}><em>---</em></strong></li>
+</ul>
+
+```text
+  "script": {
+    "start": "mdx-deck deck.mdx"
+  },
+```
+
+---
+
 <div
   style={{
-    padding: '0 40px'
+    padding: '0 30px'
   }}
 >
-  The slides for this demo are available at <em><strong>icantbelieveitsnotmarkdown.netlify.com</strong></em>
+  The slides for this demo are available at 
+  <br />
+  <a 
+    href="mdxjs.rocks" 
+    target="_blank"
+    style={{
+      textDecoration: 'none'
+    }}
+  >
+    <em><strong>
+    <TextGradient
+      start="#00feff"
+      end="#dcbaf9"
+      stop="70%"
+      angle="110"
+    >
+      mdxjs.rocks
+    </TextGradient>
+    </strong></em>
+  </a>
 </div>
+
