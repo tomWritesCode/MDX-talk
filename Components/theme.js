@@ -1,5 +1,5 @@
 export default {
-  font: 'dank mono',
+  font: 'dank mono, Roboto, sans-serif',
 
   colors: {
     text: 'ghostwhite',

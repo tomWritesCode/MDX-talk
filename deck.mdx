@@ -25,6 +25,81 @@ export { default as theme } from './Components/theme.js';
 
 ---
 
+<TextGradient
+  start="#00feff"
+  end="#dcbaf9"
+  stop="70%"
+  angle="110"
+>
+
+### Hi I'm Tom, a bit about me. 
+
+</TextGradient>
+
+<Horizontal>
+
+<ul
+  style={{
+    textAlign: 'center',
+    padding: 0
+  }}
+>
+  <Appear>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    > Javascript Developer </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    > Photographer </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    > Sometimes funny* </li>
+    <li
+      style={{
+        fontSize: '32px',
+        listStyleType: 'none'
+      }}
+    > 
+    <TextGradient
+      start="#00feff"
+      end="#dcbaf9"
+      stop="70%"
+      angle="110"
+    >
+      *results may vary 
+    </TextGradient>
+    </li>
+  </Appear>
+</ul>
+
+</Horizontal>
+
+---
+
+<div
+  style={{
+    padding: '40px 100px',
+    background: 'linear-gradient(169deg, rgba(149,118,187,1) 22%, rgba(42,199,214,1) 100%)',
+    borderRadius: '30px',
+    color: '#16161d'
+  }}
+>
+  <h3> Our topic tonight </h3>
+
+  <h1>MDX</h1> 
+</div>
+
+---
+
 <BackgroundGradient
   style={{
     width: 'auto',
@@ -38,12 +113,63 @@ export { default as theme } from './Components/theme.js';
   What is MDX?
 </BackgroundGradient>
 
+<ul
+  style={{
+    textAlign: 'center',
+    padding: '0'
+  }}
+>
+  <Appear>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  - Markdown </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    > - JSX </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    > - Components </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    > - Fast as hell </li>
+    <li
+      style={{
+        listStyleType: 'none'
+      }}
+    >
+      <TextGradient
+        start="#00feff"
+        end="#dcbaf9"
+        stop="70%"
+        angle="110"
+      >
+      All of this in ONE document.
+      </TextGradient>
+    </li>
+  </Appear>
+</ul>
 
-MDX brings the world of components to the convenience of Markdown.
+---
 
-The ability to blend JSX with Markdown you have the ability to pull components straight into your markdown file.
-
-Turning a Markdown file into an interactive project opens up a world of possibilities.
+<Image 
+  src="https://media.giphy.com/media/WuGSL4LFUMQU/giphy.gif"
+  style={{
+      backgroundPosition: 'center',
+      backgroundSize: '100%'
+    }}
+/>
 
 ---
 
@@ -78,7 +204,7 @@ Turning a Markdown file into an interactive project opens up a world of possibil
     stop="70%"
     angle="110"
   >
-    Putting Gatsby on the web?
+    Putting MDX on the web?
   </TextGradient>
   <Appear>
     <li>GatsbyJS (gatsby-mdx package)</li>
@@ -105,7 +231,26 @@ Turning a Markdown file into an interactive project opens up a world of possibil
   MDX with GatsbyJS
 </BackgroundGradient>
 
-// Using MDX / MDX-Blocks to make the presenstaion page.
+<Appear>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  - Blog Posts </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  - Pages </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  - Interactive Docs </li>
+  </Appear>
 
 ---
 
@@ -136,6 +281,24 @@ Turning a Markdown file into an interactive project opens up a world of possibil
 </Notes>
 
 ---
+
+<TextGradient
+    start="#00feff"
+    end="#dcbaf9"
+    stop="70%"
+    angle="110"
+    style={{
+      padding: '40px'
+    }}
+  >
+  <h3>
+    MDX gives us the ability to pull in a live and functioning component.
+  </h3>
+    Here is the same scoreboard component, but instead of a GIF...
+  </TextGradient>
+
+---
+
 import Scoreboard from './Components/Scoreboard.js';
 
 <BackgroundGradient
@@ -148,14 +311,10 @@ import Scoreboard from './Components/Scoreboard.js';
   }}
   random={true}
 >
-  MDX || Interactivity at its best
+  We can just put in a React component
 </BackgroundGradient>
 
 <Scoreboard />
-
-<Notes>
-  This is a component from a basketball scoreboard I made. All it does is add points to a total, nothing overly flash or complex.
-</Notes>
 
 ---
 
@@ -172,15 +331,33 @@ import Scoreboard from './Components/Scoreboard.js';
   MDX-Deck
 </BackgroundGradient>
 
-<div
-  style={{
-    padding: '0 40px'
-  }}
->
-  MDX-Deck is a tool built by Brent Jackson (@jxnblk), It turns MDX into an incredibly powerful tool for making presentations. 
-  
-  This presentation is build with MDX-Deck, it is also hosted on Netlify. 
-</div>
+<Appear>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  - Built by Brent Jackson (@jxnblk) </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  - Turns an MDX file into a powerpoint style presentation. </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  - This presentation is built using MDX-Deck. </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  - It's also hosted on Netlify. </li>
+  </Appear>
+
 
 ---
 
@@ -217,8 +394,17 @@ import Scoreboard from './Components/Scoreboard.js';
   Lets get it going.
 </TextGradient>
 <ul>
-  <li>Make a <strong style={{color: '#00feff'}}><em>deck.mdx</em></strong> file at the root of the directory.</li>
-  <li>Seperate each slide with <strong style={{color: '#00feff'}}><em>---</em></strong></li>
+  <li
+    style={{
+      marginTop: '30px',
+      marginBottom: '30px',
+    }}
+  >Make a <strong style={{color: '#00feff'}}><em>deck.mdx</em></strong> file at the root of the directory.</li>
+  <li
+    style={{
+      marginBottom: '30px',
+    }}
+  >Seperate each slide with <strong style={{color: '#00feff'}}><em>---</em></strong></li>
 </ul>
 
 ```text
