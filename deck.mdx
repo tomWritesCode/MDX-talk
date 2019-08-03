@@ -5,7 +5,11 @@ import { TextGradient, BackgroundGradient } from '@blocks/kit';
 export { default as theme } from './Components/theme.js';
 
 <Head>
-  <title>MDX || MarkDAMN</title>
+  <title>MDX || MarkDown to MarkDAMN</title>
+  <meta name="twitter:title" content="MDX || MarkDown to MarkDAMN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://res.cloudinary.com/tomwritescode/image/upload/v1564828471/MarkDAMN.png" />
+  <meta name="twitter:description" content="MDX brings the world of components to the convenience of Markdown. The ability to blend JSX with Markdown you have the ability to pull components straight into your markdown file. Turning a Markdown file into an interactive project opens up a world of possibilities." /> 
 </Head>
 
 <!-- Begin Slide 1 -->
@@ -85,6 +89,20 @@ export { default as theme } from './Components/theme.js';
 
 ---
 
+<Split>
+  <img style={{marginLeft: '-40px'}} src="./assets/Photos/2018-07-15 10.52.59 1.jpg" />
+  <img style={{marginLeft: '20px'}} src="./assets/Photos/37940008.jpg" />
+</Split>
+
+--- 
+
+<Split>
+  <img style={{marginLeft: '-40px'}} src="./assets/Photos/CaptureOne210.jpg" />
+  <img style={{marginLeft: '20px'}} src="./assets/Photos/Brighton-3815-25.jpg" />
+</Split>
+
+---
+
 <div
   style={{
     padding: '40px 100px',
@@ -116,7 +134,8 @@ export { default as theme } from './Components/theme.js';
 <ul
   style={{
     textAlign: 'center',
-    padding: '0'
+    padding: '0',
+    fontSize: '60px'
   }}
 >
   <Appear>
@@ -155,7 +174,7 @@ export { default as theme } from './Components/theme.js';
         stop="70%"
         angle="110"
       >
-      All of this in ONE document.
+      All in ONE document.
       </TextGradient>
     </li>
   </Appear>
@@ -167,7 +186,7 @@ export { default as theme } from './Components/theme.js';
   src="https://media.giphy.com/media/WuGSL4LFUMQU/giphy.gif"
   style={{
       backgroundPosition: 'center',
-      backgroundSize: '100%'
+      backgroundSize: '75%'
     }}
 />
 
@@ -181,76 +200,6 @@ export { default as theme } from './Components/theme.js';
       height: '90vh'
     }}
 />
-
----
-
-<BackgroundGradient
-  style={{
-    width: 'auto',
-    maxWidth: '500px',
-    margin: '0 auto',
-    borderRadius: '15px',
-    fontWeight: 'bold'
-  }}
-  random={true}
->
-  MDX on the web?
-</BackgroundGradient>
-
-<ul>
-  <TextGradient
-    start="#00feff"
-    end="#dcbaf9"
-    stop="70%"
-    angle="110"
-  >
-    Putting MDX on the web?
-  </TextGradient>
-  <Appear>
-    <li>GatsbyJS (gatsby-mdx package)</li>
-    <li>NextJS (Offical Plugin)</li>
-    <li>Create React App (mdx.macro)</li>
-    <li>React Static (Webpack Config Needed)</li>
-    <li>Parcel (@mdx-js/parcel-plugin-mdx plugin)</li>
-    <li>Zero</li>
-  </Appear>
-</ul>
-
----
-
-<BackgroundGradient
-  style={{
-    width: 'auto',
-    maxWidth: '500px',
-    margin: '0 auto',
-    borderRadius: '15px',
-    fontWeight: 'bold'
-  }}
-  random={true}
->
-  MDX with GatsbyJS
-</BackgroundGradient>
-
-<Appear>
-    <li
-      style={{
-        marginBottom: '30px',
-        listStyleType: 'none'
-      }}
-    >  - Blog Posts </li>
-    <li
-      style={{
-        marginBottom: '30px',
-        listStyleType: 'none'
-      }}
-    >  - Pages </li>
-    <li
-      style={{
-        marginBottom: '30px',
-        listStyleType: 'none'
-      }}
-    >  - Interactive Docs </li>
-  </Appear>
 
 ---
 
@@ -275,10 +224,6 @@ export { default as theme } from './Components/theme.js';
     }}
   /> 
 </div>
-
-<Notes>
-  Putting a demo of interactivity onto a page would most likely have to be done with GIFs.
-</Notes>
 
 ---
 
@@ -322,6 +267,81 @@ import Scoreboard from './Components/Scoreboard.js';
   style={{
     width: 'auto',
     maxWidth: '500px',
+    margin: '0 auto',
+    borderRadius: '15px',
+    fontWeight: 'bold',
+  }}
+  random={true}
+>
+  MDX on the web?
+</BackgroundGradient>
+
+<ul style={{fontSize: '50px'}}>
+  <TextGradient
+    start="#00feff"
+    end="#dcbaf9"
+    stop="70%"
+    angle="110"
+    style={{textAlign: 'center'}}
+  >
+    Putting MDX on the web?
+  </TextGradient>
+  <Appear>
+    <li>GatsbyJS (gatsby-mdx package)</li>
+    <li>NextJS (Offical Plugin)</li>
+    <li>Create React App (mdx.macro)</li>
+    <li>React Static (Webpack Config Needed)</li>
+    <li>Parcel (@mdx-js/parcel-plugin-mdx plugin)</li>
+    <li>Zero</li>
+  </Appear>
+</ul>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: 'auto',
+    maxWidth: '500px',
+    margin: '0 auto',
+    borderRadius: '15px',
+    fontWeight: 'bold'
+  }}
+  random={true}
+>
+  MDX with GatsbyJS
+</BackgroundGradient>
+
+<Appear>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+        marginTop: '20px'
+      }}
+    >  - Blog Posts </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+      }}
+    >  - Pages </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+      }}
+    >  - Interactive Docs </li>
+  </Appear>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: 'auto',
+    maxWidth: '500px',
     margin: '0 auto 40px',
     borderRadius: '15px',
     fontWeight: 'bold',
@@ -331,13 +351,30 @@ import Scoreboard from './Components/Scoreboard.js';
   MDX-Deck
 </BackgroundGradient>
 
-<Appear>
+## All of the power of MDX, wrapped in a presentation format.
+
+---
+
+<BackgroundGradient
+  style={{
+    width: 'auto',
+    maxWidth: '500px',
+    margin: '0 auto 40px',
+    borderRadius: '15px',
+    fontWeight: 'bold',
+  }}
+  random={true}
+>
+  MDX-Deck
+</BackgroundGradient>
+<ul>
     <li
       style={{
         marginBottom: '30px',
         listStyleType: 'none'
       }}
     >  - Built by Brent Jackson (@jxnblk) </li>
+<Appear>
     <li
       style={{
         marginBottom: '30px',
@@ -357,7 +394,7 @@ import Scoreboard from './Components/Scoreboard.js';
       }}
     >  - It's also hosted on Netlify. </li>
   </Appear>
-
+</ul>
 
 ---
 
@@ -420,10 +457,10 @@ import Scoreboard from './Components/Scoreboard.js';
     padding: '0 30px'
   }}
 >
-  The slides for this demo are available at 
+  I have hosted this MDX-Deck on Netlify. You can find it at: 
   <br />
   <a 
-    href="mdxjs.rocks" 
+    href="https://icantbelieveitsnotmarkdown.netlify.com" 
     target="_blank"
     style={{
       textDecoration: 'none'
@@ -435,10 +472,64 @@ import Scoreboard from './Components/Scoreboard.js';
       end="#dcbaf9"
       stop="70%"
       angle="110"
+      style={{fontSize: '60px', marginTop: '40px'}}
     >
-      mdxjs.rocks
+      icantbelieveitsnotmarkdown.netlify.com
     </TextGradient>
     </strong></em>
   </a>
 </div>
 
+---
+
+<Split>
+
+<div>
+  If you would like to get in touch I am 
+    <strong style={{color: '#00feff', fontSize: '70px'}}> @tomWritesCode </strong> 
+  on the following. 
+</div>
+<TextGradient
+    start="#00feff"
+    end="#dcbaf9"
+    stop="70%"
+    angle="110"
+  >
+<ul>
+  <li
+    style={{
+      marginBottom: '30px',
+      listStyleType: 'none',
+      fontSize: '60px',
+      fontWeight: 'bold'
+    }}
+  >    Twitter </li>
+  <li
+    style={{
+      marginBottom: '30px',
+      listStyleType: 'none',
+      fontSize: '60px',
+      fontWeight: 'bold'
+    }}
+  >    GitHub </li>
+  <li
+    style={{
+      marginBottom: '30px',
+      listStyleType: 'none',
+      fontSize: '60px',
+      fontWeight: 'bold'
+    }}
+  >    Instagram </li>
+  <li
+    style={{
+      marginBottom: '30px',
+      listStyleType: 'none',
+      fontSize: '60px',
+      fontWeight: 'bold'
+    }}
+  >    Playstation Network </li>
+
+</ul>
+</TextGradient>
+
+</Split>

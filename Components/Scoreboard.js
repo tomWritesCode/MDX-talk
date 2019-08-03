@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
-import ScoreBoardAnimate from '../Components/assets.js/scoreBoardAnimate';
+import ScoreBoardAnimate from './assets.js/scoreBoardAnimate';
 
 const ScoreBoard = styled.div`
 	display: grid;
@@ -63,6 +63,7 @@ const ScoreBoard = styled.div`
       font-size: 100px;
       margin-top: 10px;
       margin-bottom: 30px;
+      line-height: initial;
     }
 		.scoreButtons {
       width: 100%;
@@ -82,35 +83,6 @@ const ScoreBoard = styled.div`
 	}
 `;
 
-const RemoveScore = styled.div`
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: background-repeat(3,100px);
-  
-  h3{
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-  button{
-    width: 120px;
-    height: 40px;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-  .scoreDeduction{
-    width: 60px;
-    height: 40px;
-  }
-
-  .teamSelected{
-    background-color: #2c3965;
-    color: white;
-  }
-`;
-
 const ResetButton = styled.button`
   font-family: sans-serif;
   height: 40px;
@@ -119,27 +91,6 @@ const ResetButton = styled.button`
   margin: 0 auto;
   font-size: 20px;
   margin-bottom: 30px;
-`;
-
-const Stats = styled.div`
-  margin-top: 20px; 
-  font-family: sans-serif;
-
-  
-`;
-
-const PlayerStats = styled.div`
-  display: grid;
-  grid-template-columns: 50% 50%;
-  text-align: center;
-
-  @media(max-width: 450px){
-    grid-template-columns: 100%;
-  }
-`;
-
-const Head2Head = styled.div`
-  text-align: center;
 `;
 
 const TeamOne = 'TeamOneScore';
