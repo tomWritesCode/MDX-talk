@@ -121,6 +121,49 @@ export { default as theme } from './Components/theme.js';
 <BackgroundGradient
   style={{
     width: 'auto',
+    margin: '0 auto',
+    borderRadius: '15px',
+    fontWeight: 'bold'
+  }}
+  random={true}
+>
+  First of all, what is Markdown?
+</BackgroundGradient>
+
+<ul
+  style={{
+    textAlign: 'center',
+    padding: '0',
+    fontSize: '60px'
+  }}
+>
+  <Appear>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    >  A markup language with plain text formatting. </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    > Designed with the ability to be converted to different outputs </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none'
+      }}
+    > Created to be converted into HTML </li>
+  </Appear>
+</ul>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: 'auto',
     maxWidth: '500px',
     margin: '0 auto',
     borderRadius: '15px',
@@ -156,7 +199,7 @@ export { default as theme } from './Components/theme.js';
         marginBottom: '30px',
         listStyleType: 'none'
       }}
-    > - Components </li>
+    > - Extracted Components </li>
     <li
       style={{
         marginBottom: '30px',
@@ -341,6 +384,164 @@ import Scoreboard from './Components/Scoreboard.js';
 <BackgroundGradient
   style={{
     width: 'auto',
+    maxWidth: '700px',
+    margin: '0 auto',
+    borderRadius: '15px',
+    fontWeight: 'bold'
+  }}
+  random={true}
+>
+  My Current Blog Process
+</BackgroundGradient>
+
+<Appear>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+        marginTop: '20px'
+      }}
+    >  - Gatsby Blog hosted on Netlify </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+      }}
+    >  - Contentful for writting blog posts </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+      }}
+    >  - CodeSandbox if I wanted to show a working piece of code. </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+      }}
+    >  - Making Gifs to show an example  </li>
+  </Appear>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: 'auto',
+    maxWidth: '700px',
+    margin: '0 auto',
+    borderRadius: '15px',
+    fontWeight: 'bold'
+  }}
+  random={true}
+>
+  Introduce MDX into that Equation 
+</BackgroundGradient>
+
+<Appear>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+        marginTop: '20px'
+      }}
+    >  - Gatsby Blog hosted on Netlify </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+      }}
+    >  - Blog posts built with MDX </li>
+    <li
+      style={{
+        marginBottom: '30px',
+        listStyleType: 'none',
+        fontSize: '60px',
+      }}
+    >  - Working code examples imported as components into the MDX file. </li>
+  </Appear>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: 'auto',
+    maxWidth: '500px',
+    margin: '0 auto 40px',
+    borderRadius: '15px',
+    fontWeight: 'bold',
+  }}
+  random={true}
+>
+  Before || After
+</BackgroundGradient>
+
+  <div
+    style={{
+      minWidth: '900px',
+      display: 'grid',
+      gridTemplateColumns: '49% 2% 49%',
+      listStyleType: 'none'
+    }}
+  >
+  <div
+    style={{
+      display: 'inline-block'
+    }}
+  >
+  <TextGradient
+    start="#00feff"
+    end="#dcbaf9"
+    stop="70%"
+    angle="110"
+  >
+      <h3>Current</h3>
+    <div>
+      <li style={{marginBottom: '20px'}}> Gatsby </li>
+      <li style={{marginBottom: '20px'}}> Contentful </li>
+      <li style={{marginBottom: '20px'}}> CodeSandbox </li>
+      <li style={{marginBottom: '20px'}}> Gif Recording </li>
+    </div>
+  </TextGradient>
+  </div>
+
+  <hr 
+    style={{
+      background: '#00feff',
+      boxShadow: '0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4'
+    }}
+  />
+
+  <div
+    style={{
+      display: 'inline-block'
+    }}
+  >
+  <TextGradient
+    start="#00feff"
+    end="#dcbaf9"
+    stop="70%"
+    angle="110"
+  >
+      <h3>With MDX</h3>
+    <div>
+      <li style={{marginBottom: '20px'}}>Gatsby</li>
+      <li style={{marginBottom: '20px'}}>MDX</li>
+    </div>
+</TextGradient> 
+  </div>
+  </div>
+
+---
+
+<BackgroundGradient
+  style={{
+    width: 'auto',
     maxWidth: '500px',
     margin: '0 auto 40px',
     borderRadius: '15px',
@@ -472,7 +673,7 @@ import Scoreboard from './Components/Scoreboard.js';
       end="#dcbaf9"
       stop="70%"
       angle="110"
-      style={{fontSize: '60px', marginTop: '40px'}}
+      style={{fontSize: '50px', marginTop: '40px'}}
     >
       icantbelieveitsnotmarkdown.netlify.com
     </TextGradient>
@@ -483,7 +684,6 @@ import Scoreboard from './Components/Scoreboard.js';
 ---
 
 <Split>
-
 <div>
   If you would like to get in touch I am 
     <strong style={{color: '#00feff', fontSize: '70px'}}> @tomWritesCode </strong> 
@@ -495,7 +695,12 @@ import Scoreboard from './Components/Scoreboard.js';
     stop="70%"
     angle="110"
   >
-<ul>
+<ul
+  style={{
+    paddingLeft: '40px',
+    textAlign: 'center'
+  }}
+>
   <li
     style={{
       marginBottom: '30px',
